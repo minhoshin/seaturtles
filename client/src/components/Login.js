@@ -34,8 +34,6 @@ class Login extends React.Component{
  });
 }
 
-
-
   render () {
     return (
         <GoogleLogin clientId={"448333283053-4j6292rub35isemkloo4g8233jlj5lbp.apps.googleusercontent.com"}
@@ -68,16 +66,19 @@ export default Login;
 //   responseGoogle (googleUser) {
 //     var id_token = googleUser.getAuthResponse().id_token;
 //     console.log({accessToken: id_token});
+//     // var profile = googleUser.getBasicProfile();
+//     // console.log({accessToken: id_token});
+//     // console.log(profile.getName());
 //     //anything else you want to do(save to localStorage)... 
 //   }
  
 //   render () {
 //     return (
 //       <div>
-//         <GoogleLogin clientId="448333283053-4j6292rub35isemkloo4g8233jlj5lbp.apps.googleusercontent.com"
+//         <GoogleLogin socialId="448333283053-4j6292rub35isemkloo4g8233jlj5lbp.apps.googleusercontent.com"
 //                      class="google-login"
-//                      scope="profile"
 //                      responseHandler={this.responseGoogle}
+//                      scope="profile"
 //                      buttonText="Login With Google"/>
 //       </div>
 //     );
